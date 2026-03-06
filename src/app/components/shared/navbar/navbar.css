@@ -13,8 +13,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #00AEEF;
-  padding: 10px 20px;
+  background-color: #ffbb00;
+  padding: 10px 380px;
   min-height: 74px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
