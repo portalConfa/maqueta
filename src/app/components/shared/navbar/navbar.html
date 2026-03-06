@@ -1,0 +1,173 @@
+<!-- Nuevo navbar basado en el diseño de la imagen -->
+<nav class="navbar-new">
+    <!-- Header azul claro -->
+    <div class="navbar-header">
+      <!-- Logo y texto a la izquierda -->
+      <div class="navbar-left">
+        <div class="logo-section">
+          <img src="assets/img/logo.png" alt="logo" class="logo-img">
+        </div>
+      </div>
+  
+      <!-- Separador vertical -->
+      <div class="navbar-separator"></div>
+  
+      <!-- Texto central -->
+      <div class="navbar-center">
+        <span class="center-text">Zona Transaccional</span>
+      </div>
+  
+      <!-- Iconos a la derecha -->
+      <div class="navbar-right">
+        <button class="icon-btn user-icon" (click)="toggleUserMenu()">
+          <img src="assets/img/menu-person.png" alt="menu" class="menu-img">
+        </button>
+        <button class="icon-btn menu-icon" (click)="toggleAppsMenu()">
+          <img src="assets/img/menu.png" alt="menu" class="menu-img">
+        </button>
+      </div>
+    </div>
+  
+    <!-- Menú desplegable de aplicaciones -->
+    <div class="apps-menu" [class.show]="showAppsMenu">
+      <div class="apps-card">
+        <div class="row mb-3">
+          <h3 class="apps-title mt-3 ml-4">Aplicaciones Confa</h3>
+          <button class="icon-btn menu-icon " (click)="toggleAppsMenu()">
+            <img src="assets/img/Close.png" alt="menu" class="">
+          </button>
+        </div>
+        <!-- Botón cerrar -->
+        <div class="apps-grid">
+          <!-- Fila 1 -->
+           <a href="https://app.confa.co:8376/#/login" target="_blank" rel="noopener noreferrer">
+            <div class="app-item" data-color="blue">
+            <div class="app-icon">
+              <img src="../../../../assets/img/miPerfil.png" alt="">
+            </div>
+            <span class="app-label">Mi Perfil</span>
+          </div>
+           </a>
+           <a href="https://aportes-subsidios.confa.co/create-request" target="_blank" rel="noopener noreferrer">
+            <div class="app-item" data-color="blue">
+            <div class="app-icon">
+              <img src="../../../../assets/img/gestor.png" alt="">
+            </div>
+            <span class="app-label">Gestor de solicitudes</span>
+          </div>
+           </a>
+           <a href="https://app.confa.co:8370/#/login" target="_blank" rel="noopener noreferrer">
+            <div class="app-item" data-color="pink">
+            <div class="app-icon">
+              <img src="../../../../assets/img/entadasCentros.png" alt="">
+            </div>
+            <span class="app-label">Entrada a centros</span>
+          </div>
+           </a>
+           <a href="https://app.confa.co:8321/alojamiento" target="_blank" rel="noopener noreferrer">
+            <div class="app-item" data-color="pink">
+            <div class="app-icon">
+              <img src="../../../../assets/img/alojamientoReserva.png" alt="">
+            </div>
+            <span class="app-label">Reserva de alojamiento</span>
+          </div>
+           </a>
+           <a href="https://app.confa.co:8350/login#/login" target="_blank" rel="noopener noreferrer"><div class="app-item" data-color="pink">
+            <div class="app-icon">
+              <img src="../../../../assets/img/escuelas.png" alt="">
+            </div>
+            <span class="app-label">Escuelas deportivas</span>
+          </div></a>
+           <a href="https://app.confa.co:8358/#/home" target="_blank" rel="noopener noreferrer"><div class="app-item" data-color="pink">
+            <div class="app-icon">
+              <img src="../../../../assets/img/cine.png" alt="">
+            </div>
+            <span class="app-label">Reservas cultura y cine</span>
+          </div></a>
+           <a href="https://app.confa.co:8352/login#/login" target="_blank" rel="noopener noreferrer"><div class="app-item" data-color="pink">
+            <div class="app-icon">
+              <img src="../../../../assets/img/gimnasio.png" alt="">
+            </div>
+            <span class="app-label">Pago de gimnasio</span>
+          </div></a>
+           <a href="https://app.confa.co:8340/#/login" target="_blank" rel="noopener noreferrer"><div class="app-item" data-color="orange">
+            <div class="app-icon">
+              <img src="../../../../assets/img/credito.png" alt="">
+            </div>
+            <span class="app-label">Crédito digital</span>
+          </div></a>
+           <a href="https://app.confa.co:8339/#/loginPersona" target="_blank" rel="noopener noreferrer"><div class="app-item" data-color="orange">
+            <div class="app-icon">
+              <img src="../../../../assets/img/pagoCredito.png" alt="">
+            </div>
+            <span class="app-label">Pago de créditos</span>
+          </div></a>
+           <a href="https://app.confa.co:8321/salud" target="_blank" rel="noopener noreferrer"><div class="app-item" data-color="blue">
+            <div class="app-icon">
+              <img src="../../../../assets/img/agendarCita.png" alt="">
+            </div>
+            <span class="app-label">Agendar citas</span>
+          </div></a>
+          <a href="https://app.confa.co:8365/quirofanos" target="_blank" rel="noopener noreferrer"><div class="app-item" data-color="blue">
+            <div class="app-icon">
+              <img src="../../../../assets/img/cirugia.png" alt="">
+            </div>
+            <span class="app-label">Radicar cirugías</span>
+          </div></a>
+          <a href="https://lumierdigital.com:8443/paciente/login.lu?ipsId=126&token=5bPyTWUH7O" target="_blank" rel="noopener noreferrer"><div class="app-item" data-color="blue">
+            <div class="app-icon">
+              <img src="../../../../assets/img/imagenesDiagnosticas.png" alt="">
+            </div>
+            <span class="app-label">Imágenes diagnósticas</span>
+          </div></a>
+          <a href="https://laboratorio.confa.co:8587/resultados/#nbb" target="_blank" rel="noopener noreferrer"><div class="app-item" data-color="blue">
+            <div class="app-icon">
+              <img src="../../../../assets/img/laboratorio.png" alt="">
+            </div>
+            <span class="app-label">Laboratorio</span>
+          </div></a>
+          <a href="https://bibliotecadigital.confa.co/" target="_blank" rel="noopener noreferrer"><div class="app-item" data-color="teal">
+            <div class="app-icon">
+              <img src="../../../../assets/img/biblioteca.png" alt="">
+            </div>
+            <span class="app-label">Biblioteca digital</span>
+          </div></a>
+          <a href="https://app.confa.co:8324/login" target="_blank" rel="noopener noreferrer"><div class="app-item" data-color="teal">
+            <div class="app-icon">
+              <img src="../../../../assets/img/prescolar.png" alt="">
+            </div>
+            <span class="app-label">Preescolar</span>
+          </div></a>
+          <a href="https://app.confa.co:8364/#/login" target="_blank" rel="noopener noreferrer"><div class="app-item" data-color="orange">
+            <div class="app-icon">
+              <img src="../../../../assets/img/vivienda.png" alt="">
+            </div>
+            <span class="app-label">Vivienda</span>
+          </div></a>
+        
+        </div>
+      </div>
+    </div>
+  
+    <!-- Menú de usuario (opcional) -->
+    <div class="user-menu" [class.show]="showUserMenu">
+      <div class="user-menu-content">
+        <div class="user-menu-item">
+          <button class="user-menu-btn">
+            <i class="fas fa-sign-in-alt"></i>
+            Iniciar sesión
+          </button>
+        </div>
+        <div class="user-menu-item">
+          <div class="user-info">
+            <span>Juan Perez</span>
+          </div>
+          <button class="user-menu-btn" (click)="logout()">
+            <i class="fas fa-sign-out-alt"></i>
+            Cerrar sesión
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
